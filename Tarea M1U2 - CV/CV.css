@@ -1,0 +1,57 @@
+h1{
+    color: aqua ; /*comentario de color - color de tipografia*/
+    background-color: slateblue;
+    font-size:xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h3{
+    color: slateblue ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h4{
+    color: chocolate;
+    font-family: cursive;
+}
+
+.subrayado{
+    text-decoration: underline;
+    font-weight: bolder;  
+    color: black; 
+}
+ 
+li{
+    color: coral;
+    font-style: oblique;
+    font-weight: bold;   
+}
+
+p{
+    color: darkcyan;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin: 5px;    
+    padding: 10px;
+}
+
+.imagen img{
+     justify-content: space-around;
+     border-radius: 20px;
+     height: 300px;
+     width: 200px;
+     padding: 5px;
+     cursor: pointer;
+     opacity: .7;
+}
+.imagen img:hover {
+    opacity: 1;
+ 
+}
+
