@@ -1,37 +1,49 @@
+body{
+    background-image: url(img/fondo.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-color: cadetblue;
+}
+
 h1{
-    color: aqua ; /*comentario de color - color de tipografia*/
-    background-color: slateblue;
+    color: aqua ; 
     font-size:xx-large;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 
+.contenedor1{
+    display: flex;
+    flex-direction: column; 
+    height: 200px;
+    padding: 10px;
+}
+.mascota{
+    display: flex;
+    justify-content: space-between;
+}
+.mascota img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
 h3{
-    color: slateblue ;
+    color: white ;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h4{
-    color: chocolate;
+    color: crimson;
     font-family: cursive;
+    text-align: center;
+    font-size: 30px;
 }
 
 .subrayado{
     text-decoration: underline;
     font-weight: bolder;  
-    color: black; 
-}
- 
-li{
-    color: coral;
-    font-style: oblique;
-    font-weight: bold;   
-}
-
-p{
-    color: darkcyan;
-    font-size: medium;
-    font-family: 'Times New Roman', Times, serif;
+    color: white; 
 }
 
 .contenedor{
@@ -41,17 +53,34 @@ p{
     padding: 10px;
 }
 
+.imagen{
+    display: flex;
+    justify-content: center;
+}
 .imagen img{
-     justify-content: space-around;
      border-radius: 20px;
      height: 300px;
      width: 200px;
      padding: 5px;
      cursor: pointer;
-     opacity: .7;
+     opacity: .4;
 }
 .imagen img:hover {
     opacity: 1;
  
 }
 
+p{
+    color: darkcyan;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h5{
+    color: white;
+    font-size: large;
+}
+
+a{
+    color: blueviolet;
+}
