@@ -1,25 +1,19 @@
-const distancia = parseInt(prompt('Ingrese la distancia (en metros) a recorrer:', ''));
+const metros = 13000;
+let transporte= '';
 
-        if (Number.isNaN (distancia)) {
-            document.write('la distancia ingresada no es valida');
-
-            } else if (distancia ==0 || distancia <=1000){
-            document.write (`Para recorrer una distancia de ${distancia} metros, el medio de transporte adecuado es a pie.`,);
-
-            } else if (distancia <=10000)  { 
-            document.write (`Para recorrer una distancia de ${distancia} metros, el medio de transporte adecuado es la bicicleta.`,);
-
-            } else if (distancia <=30000)  {
-            document.write (`Para recorrer una distancia de ${distancia} metros, el medio de transporte adecuado es el colectivo.`,);
-
-            } else if (distancia <=100000) {
-            document.write (`Para recorrer una distancia de ${distancia} metros, el medio de transporte adecuado es el auto.`,);
-
-            }else if (distancia >100000) {
-            document.write (`Para recorrer una distancia de ${distancia} metros, el medio de transporte adecuado es el avion.`,);
-
-            }
-
+        if (metros > 0 && metros <= 1000){
+            transporte = 'pie';
+        } else if (metros > 1000 && metros <= 10000){
+            transporte = 'bicicleta';
+        } else if (metros > 10000 && metros <= 30000){
+            trasnporte = 'colectivo';
+        } else if (metros > 30000 && metros <= 100000){
+            trasnporte = 'auto';
+        } else if (metros > 100000){
+            trasnporte = 'avion';
+        }
+ 
+        console.log (`Para ${metros} metros recomendamos ir en ${trasnporte}`);
             
 
         
