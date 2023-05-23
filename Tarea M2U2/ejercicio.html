@@ -6,29 +6,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño con Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">  
+    <link rel="stylesheet" href="ejercicio.css"></link>
 </head>
-<body>  
-    <div class="container-fluid" style="background: #0b0114cb;">
-       <div class="">
-            <nav class="navbarbg-dark" data-bs-theme="dark">
-                 <div class="container-fluid">
-                 <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-info" type="submit">Buscar</button>
-                  </form>
-          </div>
-        </nav>
-    
-    
-    </div>
-    <div class="container" style="background: red;">2</div>
-    <div class="container" style="background: rgb(179, 122, 122);">
-        <div class="row">
-            <div class="col" style="background: yellow;">columna 1</div>
-            <div class="col" style="background: blue;">columna 2</div>
-    </div>
-    <div class="container" style="background: green;">4</div>
 
+
+<body> 
+    <div class="container-fluid"  style="background-color: rgba(0, 0, 0, 0.895)">
+         <div class="container">     
+            <nav aria-label="breadcrumb" tabindex="-1" >
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Estadisticas</a></li>
+                  <li class="breadcrumb-item"><a href="#">Galeria imagenes</a></li>
+                </ol>
+              </nav>
+         </div>
+
+    
+    <div class="container" data-bs-theme="dark">
+        <h2 class="titulo fs-1">El boom de las artes marciales</h2>
+        <p class="text-capitalize fs-2" >Según los institutos y las federaciones deportivas, aumentó un 20 por ciento la asistencia a los gimnasios.</p>
+     </div>
+
+
+
+    <div class="container" data-bs-theme="dark">
+        <div class="row">
+            <div class="col" >
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="artes marciales/muay thai.jpg" class="rounded mx-auto d-block" alt="muay thai">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="tituloimg">Muay Thai</h5>
+                          <p class="textoimg">Se usan los puños y codos hasta patadas y rodillazos, además se incluyen movimientos de defensa, barridos y agarres.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="artes marciales/jiu jitsu.jpg" class="rounded mx-auto d-block" alt="jiu jitsu">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="tituloimg">Jiu Jitsu</h5>
+                          <p class="textoimg">Se centra principalmente en la lucha cuerpo a cuerpo en el suelo, usando para ello luxaciones, estrangulaciones, inmovilizaciones y derribos.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="artes marciales/taekwondo.jpg" class="rounded mx-auto d-block" alt="taekwondo">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="tituloimg">Taekwondo</h5>
+                          <p class="textoimg">Destaca por sus técnicas de patadas, normalmente enfocadas al ataque al tronco o la cabeza.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>            
+            </div>    
+    </div>
+
+    <div class="container" id="texto">
+        <h2 class="Titulo-en-cta">Tips para elegir qué arte marcial practicar</h2>
+        <p class="a-tener-en-cta">Como primera medida, tienes que saber que las artes marciales son un deporte de contacto, a diferencia de lo que sucede por ejemplo con el tenis o el atletismo. Ahora bien, eso no quiere decir que en todas las disciplinas estarás siempre cuerpo a cuerpo con el oponente.Debes saber también que practicar un arte marcial no siempre es barato. La vestimenta, los cinturones, los elementos —por ejemplo guantes y vendas— pueden costar más de lo que crees.para practicar artes marciales debes tener cierta resistencia, además de fuerza, potencia y flexibilidad. Esto no quiere decir que debes estar bien entrenado, pero sí que tendrás que esforzarte bastante en cada clase. El desgaste físico en un cuadrilátero o tatami es bastante alto.</p>
+    </div>
+    <div class="container">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Beneficios de hacer Muay Thai? 
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Aumenta la fuerza y agilidad</li>
+                        <li>Aumenta la disciplina</li>
+                        <li>Mejora la agilidad mental</li>
+                        <li>Alivia el estres</li>
+                        <li>Tonifica tu cuerpo</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Beneficios de hacer Jiu Jitsu?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Desarrolla la fuerza</li>
+                        <li>Desarrollar la paciencia</li>
+                        <li>Controlar la ansiedad></li>
+                        <li>Aprender a frustrarse</li>
+                        <li>Combate el estres</li>
+                        <li>Mejora el desarrollo cardiovascular</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Beneficios de hacer Taekwondo?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Prevenir dolores de articulaciones y espalda</li>
+                        <li>Mejorar la fuerza muscular</li>
+                        <li>Ayuda a tener una mejor posicion osea</li>
+                        <li>Aumenta la ressitencia cardiovascular</li>
+                        <li>Ayuda a combatir el estres</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         <div class="contenedor" id="encuesta">
+            <h2 class="titulo-encuesta">¿Que arte marcial te parece mas conveniente?</h2>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Muay Thai
+                </label>
+              </div>
+              <div class="form-check" >
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Jiu Jitsu
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Taekwondo
+                </label>
+              </div>
+
+         </div>
+         <div class="row">
+             <div class="col-4" style="background-color: darkorange;">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu comentario</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                    <input type="submit" value="enviar" class="boton">
+                   </div>
+            </div>
+
+
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="ejercicio.js"></script>
+
 </body>
 </html>

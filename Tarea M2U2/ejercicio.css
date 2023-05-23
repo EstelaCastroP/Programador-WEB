@@ -1,0 +1,51 @@
+.titulo {
+    color: #e49936;
+    font-weight: bold;
+}
+
+.d-flex {
+    margin-block-end: 20px;
+}
+
+.text-capitalize {
+    color: antiquewhite;
+    margin-block-end: 40px;
+}
+
+.textoimg {
+    background-color: hsla(0, 0%, 66%, 0.514);
+}
+
+.tituloimg {
+    background-color: hsla(0, 0%, 66%, 0.514);;
+} 
+
+.accordion {
+    margin-block-start: 50px;
+    margin-block-end: 50px;
+
+}
+
+.Titulo-en-cta{
+    color:#e49936;
+}
+
+.a-tener-en-cta {
+    color:chocolate; 
+}
+
+#texto{
+    margin-block-start: 50px;
+    text-align: justify;
+}
+
+#encuesta {
+    margin-block-end: 30px;
+    color: rgb(143, 100, 69)
+}
+
+.titulo-encuesta {
+    color:#e49936;
+    font-size: 20px;
+    margin-block-end: 20px;
+}
