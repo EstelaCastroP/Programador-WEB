@@ -9,8 +9,6 @@
   "author": "Estela Castro",
   "license": "ISC",
   "dependencies": {
-    "aos": "^2.3.4",
-    "bootstrap": "^5.3.0",
-    "moment": "^2.29.4"
+    "aos": "^2.3.4"
   }
 }
