@@ -44,6 +44,14 @@ footer {
     font-size: 25px;
 }
 
+.Bienvenida {
+    color: rgb(212, 180, 99);
+    font-size: 30px;
+    font-family:'New Rocker';
+    line-height: 70px;
+    padding-top: 20px;
+}
+
 .novedades {
     color:rgb(212, 180, 99) ;
     font-family:'New Rocker';
@@ -73,4 +81,8 @@ footer {
 
 html {
     scroll-behavior: smooth;
+}
+
+.scroll_section {
+    scroll-margin-top: 60px;
 }
