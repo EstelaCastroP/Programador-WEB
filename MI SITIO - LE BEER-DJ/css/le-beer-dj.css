@@ -91,7 +91,9 @@ footer {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 100px;
 }
-
+.form{
+    margin-left: 50px;
+}
 html {
     scroll-behavior: smooth;
 }
