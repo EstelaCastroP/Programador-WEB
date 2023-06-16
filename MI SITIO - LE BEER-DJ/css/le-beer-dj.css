@@ -64,6 +64,7 @@ footer {
     font-family:'New Rocker';
     line-height: 60px;
     padding-top: 20px;
+    -webkit-text-stroke: 1px rgb(29, 13, 133);
 }
 
 .icon-link {
@@ -74,14 +75,15 @@ footer {
     color:rgb(212, 180, 99) ;
     font-family:'New Rocker';
     padding: 20px;
+    -webkit-text-stroke: 1px rgb(29, 13, 133);
 }
 
 .card-title {
-    color:rgba(184, 169, 36, 0.851);
+    color:rgba(20, 19, 18, 0.851);
     background-color:hsla(0, 2%, 72%, 0.514);
-    font-size: 40px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    -webkit-text-stroke: 1px black;
+    font-size: 50px;
+    font-family:'New Rocker';
+    -webkit-text-stroke: 1px rgb(172, 142, 42);
 }
 
 .card-text {
@@ -91,9 +93,7 @@ footer {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 100px;
 }
-.form{
-    margin-left: 50px;
-}
+
 html {
     scroll-behavior: smooth;
 }
@@ -102,3 +102,14 @@ html {
     scroll-margin-top: 60px;
 }
 
+#visitanos {
+    color:rgb(212, 180, 99) ;
+    font-family:'New Rocker';
+    -webkit-text-stroke: 1px rgb(29, 13, 133);
+    padding-left: 0%;
+    padding-inline-end: 50%;
+}
+
+#contactanos {
+    color: white;
+}
