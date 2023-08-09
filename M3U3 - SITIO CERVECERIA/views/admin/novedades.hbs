@@ -1,11 +1,53 @@
-<div class="container" style="margin:100px auto">
-    <div class= "row">
-        <div class="col">
+<div class="container" style="margin:70px auto">
+    <div class="row-2">
+        <div class="col offset-md-10">
             <p class="text-right">Hola {{ usuario }} !
                 <a href="/admin/login/logout" class="btn btn-sm btn-danger">Cerrar sesion
-                    <i class="fa fa-sign-out"></i>
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
                 </a>
             </p>
         </div>
     </div>
+    {{!--inicio file 2--}}
+    <div class="row">
+        <div class="col-7">
+            <h2>Listado de Novedades</h2>
+            <div class="col-2 text-right">
+                <a href="/admin/novedades/agregar" class="btn btn-success"><i class="fa fa-plus"></i>
+                    Nuevo</a>
+            </div>
+        </div>
+    </div>
+    {{!--fin fila 2--}}
+    {{!--inicio fila 3--}}
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead class="thead-dark" style="background-color:darkgray">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col" class="text-center">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each novedades}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{titulo}}</td>
+                        <td class="text-center">
+                            <a href="/admin/novedades/modificar/{{id}} " title="Editar" class="btn btn-sm btn-secondary">
+                                <i class="fa fa-pencil"></i></a>
+                            <a href="/admin/novedades/eliminar/{{id}}" title="Eliminar" class="btn btn-sm btn-secondary">
+                                <i class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {{!--fin fila 3--}}
+</div>
+</div>
 </div>
